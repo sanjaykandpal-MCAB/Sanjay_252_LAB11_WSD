@@ -1,0 +1,105 @@
+body{
+  box-sizing: border-box;
+}
+button{
+  cursor: pointer;
+  padding: 4px;
+  border: 0px;
+  font-weight: 700;
+  background-color: white;
+}
+
+button:hover {
+  padding: 4px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+h1{
+  font-weight: 400;
+  color: #282c34;
+  font-size: 38px;
+}
+.focus-visible:focus {
+  outline: 2px solid darkorange;
+  border-radius: 3px;
+}
+input:checked + label {
+  color: rgb(254, 155, 155);
+  text-decoration-line: line-through;
+}
+
+.tasks{
+ margin-top: 12px;
+ width: 400px;
+ padding: 8px;
+ text-align: left;
+}
+.tasks div{
+  width: 504px;
+  padding: 12px;
+  border-bottom: 0.4px solid rgb(190, 173, 173);
+}
+input[type="checkbox"]{
+  margin-right: 12px;
+  width: 21px;
+ 
+}
+.search input{
+  width: 472px;
+  padding: 8px;
+  outline: none;
+  border: 0px solid black;
+  border-radius: 3%;
+  font-weight: 600;
+}
+.App {
+  text-align: center;
+  background-color: antiquewhite;
+  width: 600px;
+  margin: auto;
+  
+}
+
+.App-logo {
+  height: 40min;
+  pointer-events: none;
+}
+.operation{
+  display: flex;
+  justify-content: space-evenly;
+}
+.operation div{
+  width: 100%;
+  padding: 6px;  
+}
+.search{
+  border-left: 0.4px solid rgb(190, 173, 173);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
